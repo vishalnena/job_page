@@ -1,0 +1,244 @@
+@import url('https://fonts.googleapis.com/css2?family=Urbanist:wght@600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Urbanist', sans-serif;
+}
+
+body,
+html {
+    overflow-x: hidden;
+    height: 100vh;
+    width: 100vw;
+    scroll-behavior: smooth;
+}
+
+.main-home {
+    height: 75vh;
+    width: 100vw;
+    /* background-image: url(./images/w3.png); */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* display: flex; */
+    /* justify-content: center; */
+    /* align-items: center; */
+    /* gap: 50px; */
+}
+
+.home-top {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 100px;
+    height: 50vh;
+    /* flex-wrap: wrap; */
+}
+
+
+@media screen and (max-width:800px) {
+
+    .home-top {
+        height: fit-content;
+        flex-wrap: wrap;
+        gap: 0;
+    }
+
+}
+
+
+.main-home .image-div-1 img {
+    height: 450px;
+    width: 450px;
+}
+
+.main-home .image-div img {
+    height: 370px;
+    width: 400px;
+}
+
+@media screen and (max-width:400px) {
+    .main-home .image-div-1 img {
+        height: 400px;
+        width: 370px;
+    }
+
+    .main-home .image-div img {
+        height: 330px;
+        width: 400px;
+    }
+}
+
+@media screen and (max-width:800px) {
+
+    .main-home {
+        flex-direction: column;
+        gap: 0px;
+    }
+
+    .main-home .home-text {
+        /* padding-right: 50px; */
+        padding-top: 30px;
+        padding-left: 27px;
+
+    }
+
+    .main-home .image-div img {
+        height: 350px;
+        width: 360px;
+    }
+}
+
+/* ---------------------------------------------------------------- */
+
+/* INternship Section */
+
+.card-div .intern-card {
+    background: rgb(255 214 0);
+    color: black;
+}
+
+.card-div div:hover {
+    background: black;
+    color: #f2f2f2;
+    transition: .2s linear;
+    /* color: #fff; */
+    transform: translateY(-10px);
+}
+
+.hiring-div {
+    width: 100vw;
+}
+
+.hiring-div .title {
+    text-align: center;
+    font-size: 2rem;
+}
+
+.hiring-div .card-div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 80px;
+}
+
+.hiring-div .card-div .intern-card {
+    height: 320px;
+    width: 390px;
+    border-radius: 10px;
+    padding: 20px;
+    border: 2px solid rgb(190, 190, 190);
+    box-shadow: 0 0 20px rgb(201, 200, 200);
+    
+
+}
+
+.hiring-div .card-div .intern-card .title-one {
+    font-size: 2rem;
+    margin-bottom: 10px;
+    font-weight: 800;
+}
+
+.hiring-div .card-div .intern-card .title-two {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+
+.hiring-div .card-div .intern-card .title-edu {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+
+.hiring-div .card-div .intern-card .title-three {
+    font-size: 1.2rem;
+
+}
+
+.hiring-div .intern-txt h1 {
+    font-size: 3.2rem;
+}
+
+
+@media screen and (max-width:700px) {
+    .hiring-div .card-div .intern-card {
+        height: 420px;
+        width: 300px; 
+    }
+    .hiring-div .card-div .intern-card .title-one{
+        font-size: 1.5rem;
+    }
+}
+
+/* ---------------------------------------------------------------- */
+
+.heading {
+    margin-top: 30px;
+}
+
+.campus-drive .p-div {
+    width: 100%;
+    background-image: url('./images/flag.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    text-align: center;
+    padding-block: 10px;
+
+    /* font-size: 1.2rem;
+    /* background-color: #b8e5f2; */
+    /* padding: 10px 10px; */
+    /* background: transparent; */
+    /* text-align: center; */
+    /* width: fit-content; */
+
+}
+
+
+.campus-drive .p-div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1rem;
+}
+
+/* @media screen and (max-width:500px){
+    .campus-drive .p-div{
+        padding:50px 0px;
+    }
+} */
+
+.campus-drive ul li {
+    padding: 13px 20px;
+    background: #f2f2f2;
+    border: 2px solid rgb(185, 185, 185);
+    border-radius: 10px;
+    width: 70%;
+    transition: .2s linear;
+}
+
+.campus-drive ul li:hover {
+    background: #ffc107;
+    transform: scale(1.03);
+}
+
+@media screen and (max-width:700px) {
+
+    .campus-drive ul li {
+        width: 100%;
+    }
+
+}
+
+.campus-drive ul {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 20px;
+    font-size: 1.3rem;
+    margin-top: 70px;
+    flex-direction: column;
+    padding-inline: 10px;
+    list-style: none;
+}
