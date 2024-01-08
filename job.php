@@ -20,13 +20,14 @@
     <div class="main-home">
         <div class="home-top">
             <div class="image-div-1">
-                <img src="images/We are Hiring.jpeg" alt="">
+                <img src="images/hire.png" alt="">
             </div>
             <div class="image-div">
-                <img src="images\head.jpeg" alt="">
+                <img src="images/hand2-r.png" alt="">
             </div>
         </div>
-
+        <br>
+        <br>
 
         <div class="hiring-div">
             <!-- <span class="intern-txt">
@@ -81,14 +82,10 @@
         <br>
         <br>
         <div class="hiring-div">
-            <!-- <span class="intern-txt">
-                <h1 class="title">FULLTIME JOB</h1>
-            </span> -->
-            <br>
-            <br>
-            <br>
+           
             <div class="card-div">
                 <div class="intern-card">
+                    <!-- <img src="./images/graph1.png" alt=""> -->
                     <p class="title-one"><i class="fa-solid fa-bolt"></i> &nbsp;&nbsp;Electrician</p>
                     <p class="title-two"><i class="fa-solid fa-briefcase"></i>&nbsp;&nbsp;Expreince: Entry Level | Exp</p>
                     <p class="title-edu"><i class="fa-solid fa-user-tie"></i>&nbsp;&nbsp;Qualification: Diploma |
@@ -100,6 +97,7 @@
                     </p>
                 </div>
                 <div class="intern-card">
+                    <!-- <img src="./images/graph1.png" alt=""> -->
                     <p class="title-one"><i class="fa-solid fa-box"></i>&nbsp;&nbsp;Packaging</p>
                     <p class="title-two"><i class="fa-solid fa-briefcase"></i>&nbsp;&nbsp;Expreince: Entry Level | Exp</p>
                     <p class="title-edu"><i class="fa-solid fa-user-tie"></i>&nbsp;&nbsp;Qualification: High school |
@@ -109,6 +107,7 @@
                     </p>
                 </div>
                 <div class="intern-card">
+                    <!-- <img src="./images/graph1.png" alt=""> -->
                     <p class="title-one"><i class="fa-solid fa-pen-nib"></i>&nbsp;&nbsp; Molding</p>
                     <p class="title-two"><i class="fa-solid fa-briefcase"></i>&nbsp;&nbsp;Expreince: Entry Level | Exp</p>
                     <p class="title-edu"><i class="fa-solid fa-user-tie"></i>&nbsp;&nbsp;Qualification: High school |
@@ -127,6 +126,7 @@
             <div class="campus-drive">
 
                 <div class="p-div">
+                    <img src="./images/water.png" class="abs" alt="">
                     <p> ARE YOU LOOKING FOR CAMPUS DRIVE IN YOUR COLLAGE ?</p>
                 </div>
                 <ul>

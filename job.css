@@ -34,7 +34,17 @@ html {
     align-items: center;
     gap: 100px;
     height: 50vh;
+    width: 100vw;
+    background: url('./images/box-r.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    /* background: #000; */
+
     /* flex-wrap: wrap; */
+    /* background: url('./images/wave11.jpeg');
+    background-repeat: no-repeat;
+    object-fit: cover; */
 }
 
 
@@ -50,24 +60,25 @@ html {
 
 
 .main-home .image-div-1 img {
-    height: 450px;
+    height: 380px;
     width: 450px;
 }
 
 .main-home .image-div img {
     height: 370px;
-    width: 400px;
+    width: 430px;
 }
 
 @media screen and (max-width:400px) {
     .main-home .image-div-1 img {
-        height: 400px;
+        height: 350px;
         width: 370px;
     }
 
     .main-home .image-div img {
         height: 330px;
-        width: 400px;
+        width: 500px;
+        
     }
 }
 
@@ -95,21 +106,10 @@ html {
 
 /* INternship Section */
 
-.card-div .intern-card {
-    background: rgb(255 214 0);
-    color: black;
-}
-
-.card-div div:hover {
-    background: black;
-    color: #f2f2f2;
-    transition: .2s linear;
-    /* color: #fff; */
-    transform: translateY(-10px);
-}
-
 .hiring-div {
     width: 100vw;
+    background-repeat: no-repeat;
+    object-fit: cover;
 }
 
 .hiring-div .title {
@@ -126,14 +126,38 @@ html {
 }
 
 .hiring-div .card-div .intern-card {
+    position: relative;
     height: 320px;
     width: 390px;
-    border-radius: 10px;
+    border-radius: 20px;
     padding: 20px;
-    border: 2px solid rgb(190, 190, 190);
-    box-shadow: 0 0 20px rgb(201, 200, 200);
-    
+    border: 2px solid rgb(226, 224, 224);
+    /* box-shadow: 0 0 20px rgb(223, 222, 222); */
+    transition: .2s ease;
+    background: url('./images/wave11.jpeg');
+    background-position: 0px 60px;
+    /* background-image: linear-gradient(to top right,rgb(35, 237, 255),rgb(14, 195, 255),rgb(0, 123, 255)); */
+}
 
+
+.hiring-div .card-div .intern-card i {
+    /* color: rgb(0, 195, 255); */
+    color: rgb(0, 0, 0);
+}
+
+.hiring-div .card-div .intern-card img {
+    position: absolute;
+    top: -40px;
+    left: 40%;
+    /* transform: translate(-50%,-50%); */
+    height: 70px;
+}
+
+
+.hiring-div .card-div .intern-card:hover {
+    transform: translateY(-10px);
+    /* box-shadow: 0 0 30px rgb(78, 164, 255); */
+    box-shadow: 0 0 30px rgb(211, 211, 211);
 }
 
 .hiring-div .card-div .intern-card .title-one {
@@ -164,10 +188,12 @@ html {
 
 @media screen and (max-width:700px) {
     .hiring-div .card-div .intern-card {
-        height: 420px;
-        width: 300px; 
+        /* height: 420px; */
+        height: fit-content;
+        width: 340px;
     }
-    .hiring-div .card-div .intern-card .title-one{
+
+    .hiring-div .card-div .intern-card .title-one {
         font-size: 1.5rem;
     }
 }
@@ -211,15 +237,17 @@ html {
 
 .campus-drive ul li {
     padding: 13px 20px;
-    background: #f2f2f2;
-    border: 2px solid rgb(185, 185, 185);
+    background: #f6f6f6;
+    border: 2px solid rgb(234, 233, 233);
     border-radius: 10px;
     width: 70%;
     transition: .2s linear;
 }
 
 .campus-drive ul li:hover {
-    background: #ffc107;
+    /* background: #ffc107; */
+    background:rgb(35, 182, 255);
+    color: #fff;
     transform: scale(1.03);
 }
 
@@ -241,4 +269,17 @@ html {
     flex-direction: column;
     padding-inline: 10px;
     list-style: none;
+}
+
+.campus-drive .p-div {
+    position: relative;
+    font-size: 1.3rem;
+}
+
+.campus-drive .p-div .abs {
+    position: absolute;
+    z-index: -1;
+    top: -20px;
+    height: 80px;
+    width: 360px;
 }
